@@ -6,17 +6,9 @@ orderData = {
     'Above 2000': 76
 };
 
-const total = Object.values(orderData).reduce(( acc, cur ) => acc + cur, 0);
-console.log(total)
-
-
-
-// let sum = 0;
-// for (let i = 0; i < total.lenght; i++) 
-// {
-//     sum = sum + total[i]
-// }
-
-
-
-// console.log(sum);
+const total = Object.values(orderData);
+let sum = 0;
+for (let i = 0; i < total.length; i++) {
+    sum = sum + total[i];
+}
+console.log("Total is " + sum);
